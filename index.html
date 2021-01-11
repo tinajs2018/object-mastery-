@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects basis</title>
+</head>
+<body>
+  <script>
+      const person={
+          name:['bob','smith','janet','micahel','Eunice'],
+          age:[23,67,89,45,21],
+          gender:['male','Female','male','female','female'],
+          interest:['music','fashion','coding','dancing','swimming'],
+          bio:function(){
+              alert(this.name[0] +'' +this.name[1] +this.age+'Years and she likes' +this.interest[0]+'and' +this[1] +'');
+          },
+          greating:function(){
+              alert('hi am ' +this.name[0] +'.')
+          }
+        
+
+      };
+      person.farewell=function(){
+          alert(' it is a pleaure getting to meet all');
+      }
+      person['eyes']='lazer eyes using virtiual reality';
+      let myDataNme='height';
+      let myDatValue='1.75';
+      person[myDataNme]=myDatValue;
+  </script>  
+</body>
+</html>

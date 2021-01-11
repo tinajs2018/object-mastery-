@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototypes</title>
+</head>
+<body>
+   <script>
+     function person(first,last,age,gender,interest){
+         this.name={
+             first,
+             last,
+         }
+         this.age=age;
+         this.gender=gender;
+         this.interest=interest;
+     }
+     person.prototype.greatings=function(){
+         alert('IT not  about  others it about you' + this.name.first +'.')
+     };
+     function teacher(first,last,age,interest,subject){
+         person.call(this,first,last,age,gender,interest);
+         this.subject=subjects
+     }
+     teacher.prototype=Object.create(person.prototype);
+     Object.defineProperty(teacher.prototype, 'constructor', {
+    value: teacher,
+    enumerable: false, // so that it does not appear in 'for in' loop
+    writable: true });
+     
+   </script> 
+</body>
+</html>
